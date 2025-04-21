@@ -1,0 +1,13 @@
+for i in range(7,15) :
+    print(i)
+
+x = 6
+while x<14 :
+    x = x+1
+    print(x)
+
+x=0
+while x>-5000 :
+    x = x-500
+    print(x)
+
