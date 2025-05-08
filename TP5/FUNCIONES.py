@@ -1,4 +1,4 @@
-import CALCULADORA_def as c
+
 
 def suma(x1, x2):
     resultado = x1 + x2
@@ -15,6 +15,7 @@ def mult(x1, x2):
 def div(x1, x2):
     if x2 ==0:
         print("no se puede pa")
+        return None
     else:
         resultado = x1 / x2
         return resultado
