@@ -53,5 +53,3 @@ while True:
 
     else:
         print("cualquiera master")
-    ans=rs
-    flag= True

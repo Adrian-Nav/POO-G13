@@ -1,5 +1,3 @@
-
-
 def suma(x1, x2):
     resultado = x1 + x2
     return resultado
