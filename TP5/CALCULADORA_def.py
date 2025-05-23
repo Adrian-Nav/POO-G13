@@ -4,17 +4,22 @@ flag=False
 ans = None
 
 while True:
-    a = float(input("solicite la operacion que quiere realizar: "))
+    try:
+        a = float(input("solicite la operacion que quiere realizar: "))
+    except ValueError:
+        print("Escriba un numero valido: ")
+        continue
+
+    if a ==5:
+       print("OFF")
+       break
+
     d= input("quiere usar el resultado anterior?(s/n): ")
 
     if d=="s":
         flag=True
     elif d=="n":
         flag=False
-
-    if a ==5:
-       print("OFF")
-       break
 
     if a ==1:
         if flag:
@@ -43,13 +48,17 @@ while True:
         print(rs)
 
     elif a ==4:
-        if flag:
-            a=ans
-            b=float(input("ingrese un segundo numero aqui: "))
-        else:
-            a,b=f.solicitar_datos()
-        rs=f.div(a,b)
-        print(rs)
-
+        try:
+            if flag:
+                a=ans
+                b=float(input("ingrese un segundo numero aqui: "))
+            else:
+                a,b=f.solicitar_datos()
+            rs=f.div(a,b)
+            print(rs)
+        except ZeroDivisionError:
+            print("No se puede dividir un numero por 0")
+            continue
+        
     else:
         print("cualquiera master")

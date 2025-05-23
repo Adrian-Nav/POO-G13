@@ -11,12 +11,8 @@ def mult(x1, x2):
     return resultado
 
 def div(x1, x2):
-    if x2 ==0:
-        print("no se puede pa")
-        return None
-    else:
-        resultado = x1 / x2
-        return resultado
+     resultado = x1 / x2
+     return resultado
     
 def solicitar_datos():
     x1 = float(input("ingrese un numero aqui: "))
