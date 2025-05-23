@@ -15,16 +15,16 @@ while True:
        break
 
     d= input("quiere usar el resultado anterior?(s/n): ")
-
+    
     if d=="s":
-        flag=True
+            flag=True
     elif d=="n":
-        flag=False
+            flag=False
 
     if a ==1:
         if flag:
             a=ans
-            b=float(input("ingrese un segundo numero aqui: "))
+            b=f.solicitar_datos_ans()
         else:
             a,b=f.solicitar_datos()
         rs=f.suma(a,b)
