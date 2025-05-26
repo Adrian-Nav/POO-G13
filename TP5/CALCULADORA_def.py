@@ -13,9 +13,15 @@ while True:
     if a ==5:
        print("OFF")
        break
-
-    d= input("quiere usar el resultado anterior?(s/n): ")
     
+    try:
+        d= input("quiere usar el resultado anterior?(s/n): ")
+        if d=="s":
+            x=ans+1
+    except Exception as ex:
+        print("no hay valor de ans, el error es: ", TypeError(ex))
+        d="n"
+
     if d=="s":
             flag=True
     elif d=="n":
