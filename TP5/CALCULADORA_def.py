@@ -1,7 +1,11 @@
 import FUNCIONES as f
+from rich import print
+from rich.panel import Panel
 
 flag=False
 ans = None
+
+print(Panel.fit("[green]Bienvenidos a Navarrets Calculator1[green]"))
 
 while True:
     try:
@@ -32,6 +36,7 @@ while True:
             a=ans
             b=f.solicitar_datos_ans()
         else:
+            print("[cyan]Has elegido hacer una suma sin ans[cyan]")
             a,b=f.solicitar_datos()
         rs=f.suma(a,b)
         print(rs)

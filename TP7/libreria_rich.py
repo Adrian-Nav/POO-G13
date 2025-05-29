@@ -3,7 +3,7 @@ from rich.panel import Panel
 from rich.console import Console
 
 print(Panel.fit("[bold magenta]Hola, soy el Navarrete[/bold magenta]\n"
-                "[green]Hoy les muestro la librería 'rich'![/green]\n\n"
+                "[green]Hoy les muestro la librería 'rich'![/green]\n"
                 "[cyan]Sirve para que la consola se vea facherita y colorida[/cyan]",
                 title="Mi primera librería en su prime"))
 
