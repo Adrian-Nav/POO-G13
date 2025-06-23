@@ -1,13 +1,13 @@
-class Perro:
+#class Perro:
 
-    especie ="mamifero"
+    #especie ="mamifero"
 
-    def __init__(self, nombre, raza):
-        print(f"Creando perro {nombre}, {raza}")
+    #def __init__(self, nombre, raza):
+        #print(f"Creando perro {nombre}, {raza}")
 
-        self.nombre = nombre
-        self.raza = raza
+        #self.nombre = nombre
+        #self.raza = raza
 
-mi_perro = Perro("Choc", "Mestizo")
-print(type(mi_perro))
-print(Perro.especie)
+#mi_perro = Perro("Choc", "Mestizo")
+#print(type(mi_perro))
+#print(Perro.especie)

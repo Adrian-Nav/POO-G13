@@ -8,5 +8,5 @@ while z > 0:
     x += 2
     z -= 1
 
-print('0' * (x))
+print('0' * z +'0' * x + '0' * z)
 
