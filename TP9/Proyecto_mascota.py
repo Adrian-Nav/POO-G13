@@ -12,29 +12,37 @@ class Mascota:
           self.hambre = max(0,min(100,self.hambre))
 
      def jugar(self):
-          self.felicidad=+20
-          self.energia=-30
-          self.hambre=+20
-          print("Que perro revoltoso")
+          self.felicidad+=20
+          self.energia-=30
+          self.hambre+=20
+          print(f"Que perro revoltoso,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
 
      def comer(self):
-          self.felicidad=+10
-          self.energia=+20
-          self.hambre=-60          
-          print("Cuanta hambre tenia")
+          self.felicidad+=10
+          self.energia+=20
+          self.hambre-=60          
+          print(f"Cuanta hambre tenia,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
 
      def dormir(self):
-          self.felicidad=+10
-          self.energia=+60
-          self.hambre=+50          
-          print("Parece un ladrillo")
+          self.felicidad+=10
+          self.energia+=60
+          self.hambre+=50          
+          print(f"Parece un ladrillo,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
 
 nombre = input("Como se llama tu mascota: ")
 especie = input("Que especie es tu mascota: ")
-a = input("Que quieres que haga tu mascota: ")
+mascota1=Mascota(nombre,especie)
 
-mascota1 = Mascota(nombre, especie)
+while True:
+     a = input("Que quieres que haga tu mascota: ")
 
-mascota1.jugar()
-mascota1.comer()
-mascota1.dormir()
+     if a=="jugar":
+          mascota1.jugar()
+     elif a=="dormir":
+          mascota1.dormir()
+     elif a=="comer":
+          mascota1.comer()
+
+
+
+
