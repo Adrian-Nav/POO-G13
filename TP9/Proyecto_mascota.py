@@ -15,19 +15,25 @@ class Mascota:
           self.felicidad+=20
           self.energia-=30
           self.hambre+=20
-          print(f"Que perro revoltoso,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
+          self.limitar_valores()
+          print(f"Que perro revoltoso")
+          print(f"felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
 
      def comer(self):
           self.felicidad+=10
           self.energia+=20
-          self.hambre-=60          
-          print(f"Cuanta hambre tenia,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
+          self.hambre-=60   
+          self.limitar_valores()       
+          print(f"Cuanta hambre tenia.")
+          print(f"felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
 
      def dormir(self):
           self.felicidad+=10
           self.energia+=60
-          self.hambre+=50          
-          print(f"Parece un ladrillo,felicidad={self.felicidad},energia=¨{self.energia},hambre={self.hambre}")
+          self.hambre+=50   
+          self.limitar_valores()       
+          print(f"Parece un ladrillo. ")
+          print(f"felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
 
 nombre = input("Como se llama tu mascota: ")
 especie = input("Que especie es tu mascota: ")
@@ -42,6 +48,8 @@ while True:
           mascota1.dormir()
      elif a=="comer":
           mascota1.comer()
+     elif a=="nada":
+          break
 
 
 
