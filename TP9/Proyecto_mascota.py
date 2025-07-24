@@ -5,6 +5,7 @@ class Mascota:
           self.energia=80
           self.felicidad=70
           self.hambre=60
+          self.aura=0
 
      def limitar_valores(self):
           self.energia = max(0,min(100,self.energia))
@@ -35,6 +36,14 @@ class Mascota:
           print(f"Parece un ladrillo. ")
           print(f"felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
 
+     def truco(self):
+          self.aura+=1000000
+          self.felicidad+=10000
+          self.energia-=100
+          self.hambre+=100
+          print("No lo puedo creer, CUANTA AURA.")
+          print(f"aura={self.aura},felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
+
 nombre = input("Como se llama tu mascota: ")
 especie = input("Que especie es tu mascota: ")
 mascota1=Mascota(nombre,especie)
@@ -48,6 +57,8 @@ while True:
           mascota1.dormir()
      elif a=="comer":
           mascota1.comer()
+     elif a=="truco":
+          mascota1.truco()
      elif a=="nada":
           break
 
