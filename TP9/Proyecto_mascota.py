@@ -36,7 +36,7 @@ class Mascota:
           print(f"Parece un ladrillo. ")
           print(f"felicidad={self.felicidad},energia={self.energia},hambre={self.hambre}")
 
-     def truco(self):
+     def backflip(self):
           self.aura+=1000000
           self.felicidad+=10000
           self.energia-=100
@@ -57,8 +57,8 @@ while True:
           mascota1.dormir()
      elif a=="comer":
           mascota1.comer()
-     elif a=="truco":
-          mascota1.truco()
+     elif a=="backflip":
+          mascota1.backflip()
      elif a=="nada":
           break
 
