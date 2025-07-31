@@ -1,17 +1,17 @@
 import metodos as m
 
 try:
-     nombre = input("Como se llama tu mascota: ")
-     especie = input("Que especie es tu mascota: ")
+     nombre = input("Como se llama tu mascota: \n")
+     especie = input("Que especie es tu mascota: \n")
      mascota1=m.Mascota(nombre,especie)
 except ValueError:
      print("Escriba algo válido")
      
 while True:
      try:
-          a = input("Que quieres que haga tu mascota: ")
+          a = input("Que quieres que haga tu mascota: \n")
      except ValueError:
-          print("Escriba algo válido")
+          print("Escriba algo válido\n")
           continue
      
      if a=="jugar":

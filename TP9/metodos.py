@@ -1,3 +1,6 @@
+from tkinter import *
+from tkinter import ttk
+
 class Mascota:   
      def __init__(self, nombre, especie):
           self.nombre = nombre
@@ -18,8 +21,9 @@ class Mascota:
           self.energia-=30
           self.hambre+=20
           self.limitar_valores()
+          
           print(f"Que perro revoltoso")
-          print(f"felicidad={self.felicidad}%,energia={self.energia}%,hambre={self.hambre}%")
+          print(f"felicidad={self.felicidad}%\nenergia={self.energia}%\nhambre={self.hambre}%")
 
      def comer(self):
           self.felicidad+=10
@@ -27,7 +31,7 @@ class Mascota:
           self.hambre-=60   
           self.limitar_valores()       
           print(f"Cuanta hambre tenia.")
-          print(f"felicidad={self.felicidad}%,energia={self.energia}%,hambre={self.hambre}%")
+          print(f"felicidad={self.felicidad}%\nenergia={self.energia}%\nhambre={self.hambre}%")
 
      def dormir(self):
           self.felicidad+=10
@@ -35,7 +39,7 @@ class Mascota:
           self.hambre+=50   
           self.limitar_valores()       
           print(f"Parece un ladrillo. ")
-          print(f"felicidad={self.felicidad}%,energia={self.energia}%,hambre={self.hambre}%")
+          print(f"felicidad={self.felicidad}%\nenergia={self.energia}%\nhambre={self.hambre}%")
 
      def backflip(self):
           self.aura+=1000000
@@ -44,7 +48,7 @@ class Mascota:
           self.hambre+=100
           self.limitar_valores()
           print("No lo puedo creer, CUANTA AURA.")
-          print(f"aura={self.aura}%,felicidad={self.felicidad}%,energia={self.energia}%,hambre={self.hambre}%")
+          print(f"aura={self.aura}%\nfelicidad={self.felicidad}%\nenergia={self.energia}%\nhambre={self.hambre}%")
 
      def volar(self):
           self.aura+=102120120
@@ -54,4 +58,4 @@ class Mascota:
           self.altitud+=1000000
           self.limitar_valores()
           print("aura, una mascota que vuela")
-          print(f"aura={self.aura}%,felicidad={self.felicidad}%,energia={self.energia}%,hambre={self.hambre}%,altitud={self.altitud}m")
+          print(f"aura={self.aura}%\nfelicidad={self.felicidad}%\nenergia={self.energia}%\nhambre={self.hambre}%\naltitud={self.altitud}m")
