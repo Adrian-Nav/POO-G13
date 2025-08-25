@@ -63,7 +63,7 @@ def generar_qr_basico():
     )
     
     # Guardar imagen
-    img.save("/home/pirum/san_pablo/repos/Tareas/TP11/qr_basico.png")
+    img.save("TP11/qr_basico.png")
     print("✅ QR básico guardado como 'qr_basico.png'")
     
     return qr
@@ -117,10 +117,10 @@ def generar_qr_con_estilo():
     # Descomenta la forma que quieras usar:
     
     # 1. Módulos redondeados (activo por defecto)
-    drawer = RoundedModuleDrawer()
+    # drawer = RoundedModuleDrawer()
     
     # 2. Módulos circulares (descomenta para usar)
-    # drawer = CircleModuleDrawer()
+    drawer = CircleModuleDrawer()
     
     # 3. Módulos cuadrados tradicionales (descomenta para usar)
     # drawer = SquareModuleDrawer()
@@ -137,7 +137,7 @@ def generar_qr_con_estilo():
         # back_color="#F0FFF0"     # Verde muy claro (descomenta para usar)
     )
     
-    img.save("/home/pirum/san_pablo/repos/Tareas/TP11/qr_estilizado.png")
+    img.save("TP11/qr_estilizado.png")
     print("✅ QR estilizado guardado como 'qr_estilizado.png'")
 
 def generar_qr_con_logo():
